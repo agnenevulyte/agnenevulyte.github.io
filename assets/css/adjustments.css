@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+/* @media (max-width: 981px) {
+    .container-place {
+        position: relative;
+        top: 40px;
+        left: 67%;
+    }
+    .inputFieldClass {
+        font-size: 20px;
+    }
+} */
+
+    .hiddenFieldClass {
+        font-size: 40px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 400;
+        opacity: 0.4;
+        opacity: 0;
+        filter: alpha(opacity = 0);
+    }
+
+    .container-place {
+        position: relative;
+        top: 60px;
+        left: 52%;
+    }
+    
+    .inputFieldClass {
+        margin-top: -20px;
+        margin-left: -120px;
+        color: #555555;
+        font-size: 28px;
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 1.8;
+        font-weight: bold;
+    }
+
+    .letterContainer {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    .letterStatic {
+        display: inline;
+    }
+
+    .letterAnimTop {
+        display: inline;
+        -webkit-animation: dropTop .1s ease;
+        -moz-animation: dropTop .1s ease;
+
+    }
+
+    .letterAnimBottom {
+        display: inline;
+        position: absolute;
+        -webkit-animation: dropBottom .1s ease;
+        -moz-animation: dropBottom .1s ease;
+    }
+
+    @-moz-keyframes blink {
+        from { opacity: 0 }
+        to { opactiy: 1 }
+    }
+
+    @-webkit-keyframes blink {
+        from { opacity: 0 }
+        to { opactiy: 1 }
+    }
+
+    @-moz-keyframes dropTop {
+        from {
+            -moz-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
+            transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
+        }
+
+        to {
+            -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
+            transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
+        }
+    }
+
+    @-moz-keyframes dropBottom {
+        from {
+            -moz-transform: translateY(20px) translateZ(20px) rotateX(-90deg);
+            transform: translateY(20px) translateZ(20px) rotateX(-90deg);
+        }
+
+        to {
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+    }
+
+    @-webkit-keyframes dropTop {
+        from { -webkit-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg); }
+        to { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg); }
+}
+
+    @-webkit-keyframes dropBottom {
+        from { -webkit-transform: translateY(20px) translateZ(20px) rotateX(-90deg); }
+        to { -webkit-transform: rotateX(0deg); }
+    }
+
+.container-fancy-input {
+  position: relative;
+}
+
+.container-input-hidden {
+  display: none;
+}
+
+
+@media (max-width: 400px) {
+    .container-place {
+        top: 40px;
+        left: 67%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .container-place {
+        top: 40px;
+        left: 64%;
+    }
+}
+@media (min-width: 501px) and (max-width: 738px) {
+    .container-place {
+        top: 40px;
+        left: 61%;
+    }
+}
+
+@media (min-width: 739px) and (max-width: 981px) {
+    .container-place {
+        top: 40px;
+        left: 57%;
+    }
+}
+@media (max-width: 981px) {
+    /* .container-place {
+        top: 40px;
+        left: 67%;
+    } */
+    .inputFieldClass {
+        font-size: 20px;
+    }
+}

@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Highlights by HTML5 UP</title>
+		<title>Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/adjustments.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -19,8 +20,15 @@
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
-					<h1>Highlights</h1>
-					<p>A fun little { responsive } single pager by <a href="http://html5up.net">HTML5 UP</a></p>
+					<h1>Front-end Developer</h1>
+					<div class="container-fancy-input container-input-hidden"><p>Agne Nevulyte</p></div>
+					<div class="fancy-input-styling">
+						<div class="container-place">
+							<div id="inputField" class="inputFieldClass" style="text-align: left;"></div>
+							<input type="text" class="hiddenFieldClass" id="hiddenInput" />
+						</div>
+					</div>
+					<!-- <p>A fun little { responsive } single pager by <a href="http://html5up.net">HTML5 UP</a></p> -->
 				</header>
 				<div class="container">
 					<ul class="actions">
@@ -37,7 +45,12 @@
 						<header class="major">
 							<h2>Who I am</h2>
 						</header>
-						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
+						<p>Dance addict, skiing lover, book worm, explorer and gym fanatic. With a degree in chemistry later on have become a self-taught front-end developer. Currently working with Javascript, HTML and CSS. Usually spending my spare time in freeCodeCamp.com or udemy.com . Have some experience with Jekyll and used Umbraco on some
+								projects. Am working towards mastering frameworks such as Vue.js, React and
+								Angular, would definitely want to work on them more. Also, looking into several
+								backend languages - Python, Golang and Node.js framework. From
+								deployment perspective – I’m also now experimenting with Docker.</p>
+						<img id="myPic" src="images/myPic.jpeg" alt="My profile picture">
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -413,16 +426,59 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		-->
 
 		<!-- Footer -->
+
+		<script>
+			function checkStuff() {
+				var name = document.forml.name;
+				var email = document.forml.email;
+				var message = document.forml.commment;
+				var msg = document.getElementById("msg");
+
+				if (name.value == "") {
+					msg.style.display = "block";
+					msg.innerHTML = "Name cannot be blank";
+					name.focus();
+					return false;
+				} else {
+					msg.innerHTML = "";
+					msg.style.display = 'none';
+				}
+
+				if (email.value = "") {
+					msg.innerHTML = "Email cannot be blank";
+					email.focus();
+					return false;
+				} else {
+					msg.innerHTML = "";
+				}
+				var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+				if (!re.test(email.value)) {
+					msg.innerHTML = "Please enter a valid email";
+					email.focus();
+					return false;
+				} else {
+					msg.innerHTML = "";
+				}
+
+				if (message.value = "") {
+					msg.innerHTML = "Please leave your message";
+					message.focus();
+					return false;
+				} else {
+					msg.innerHTML = "";
+				}
+			}
+		</script>
 			<section id="footer">
 				<div class="container">
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<form method="post" action="#">
+					<!-- <form name="forml" method="post" action="#" onsubmit="returncheckStuff()">
 						<div class="row uniform">
-							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" autocomplete="off"/></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" autocomplete="off"/></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4" autocomplete="off"></textarea></div>
 							<div class="12u$">
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" /></li>
@@ -430,7 +486,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 						</div>
 					</form>
-				</div>
+					<span id="message"></span> -->
 				<footer>
 					<ul class="icons">
 						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
@@ -453,6 +509,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/adjustments.js"></script>
 
 	</body>
 </html>
