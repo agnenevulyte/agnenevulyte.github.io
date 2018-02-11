@@ -168,7 +168,18 @@
     background-color: #DB2C62;
     position: relative;
 }
-
+@media (min-width: 981px) {
+    #header header h1 {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .backgroundWidth {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
 
 /* button color */
 .button.special {
@@ -465,3 +476,7 @@ html {
     header.major h1:after {
         background: 0;
     } */
+
+
+
+    
