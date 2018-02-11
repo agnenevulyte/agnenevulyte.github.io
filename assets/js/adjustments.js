@@ -214,3 +214,19 @@ $(window).scroll(function(){
 //         msg.innerHTML = "";
 //     }
 // }
+
+
+// download button
+
+function downloadCv() {
+    var download = $('.download'),
+        meter = $('.meter');
+
+    $('.button-download').on('click', function(e) {
+    download.toggleClass('is-active');
+    
+    setTimeout(function() {
+        meter.toggleClass('is-done');
+    }, 4000);
+    });
+};
