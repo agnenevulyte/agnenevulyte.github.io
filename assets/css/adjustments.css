@@ -556,3 +556,7 @@ ul {
 .main .container:before {
     min-height: 0;
 }
+
+dl {
+    margin: 3em 0 2em 0;
+}
