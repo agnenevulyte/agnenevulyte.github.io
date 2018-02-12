@@ -160,13 +160,21 @@
 
 
 /* main css changes */
-
+@media (min-width:737px) {
+    #header {
+        height: 800px;
+    }    
+}
 
 /* header color */
 #header header h1 {
-    color: white;
-    background-color: #DB2C62;
+    /* color: white; */
+    color: #404040;
+    /* background-color: #DB2C62; */
     position: relative;
+}
+#header header p {
+    color: #404040;
 }
 @media (min-width: 981px) {
     #header header h1 {
@@ -223,14 +231,15 @@ header.major h1:after {
 
 @media (min-width: 981px) {
     #footer footer .copyright {
-        color: rgba(255, 255, 255, 0.5);
+        /* color: rgba(255, 255, 255, 0.5); */
+        color: #6f7577;
     }
 }
 
 
 /* button color */
 .button {
-    padding: 0 2em;
+    padding: 0 1em;
 }
 .button.special {
     border-radius: 15px;
@@ -538,4 +547,12 @@ ul.projects {
 ul {
     padding-left: 0;
 }
-    
+
+/* footer height */
+#footer {
+    min-height: 0vh;
+}
+
+.main .container:before {
+    min-height: 0;
+}

@@ -1312,7 +1312,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("../../images/background2.jpg"), url("../../images/background2.jpg");
+		background-image: url("http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg"), url("../../images/background2.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
