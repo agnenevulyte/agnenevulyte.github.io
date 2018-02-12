@@ -1362,7 +1362,7 @@
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			/* color: #8cd1a8 !important; */
 			text-decoration: none;
 		}
 

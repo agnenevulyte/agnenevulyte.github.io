@@ -201,6 +201,7 @@ header.major h1:after {
 #myPic {
     width: 70%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 /* icons colors on the big screen */
@@ -208,15 +209,21 @@ header.major h1:after {
     color: #61686b;
 } */
 .socialMedia {
-    color: #61686b;
+    color: #DB2C62;
+}
+.socialMedia:link {
+    color: #DB2C62;
+}
+.socialMedia:hover {
+    color: #FF5280;
+}
+a:hover {
+    color: #FF5280;
 }
 
 @media (min-width: 981px) {
     #footer footer .copyright {
         color: rgba(255, 255, 255, 0.5);
-    }
-    .socialMedia {
-        color: #DB2C62;
     }
 }
 
@@ -482,4 +489,17 @@ header.major h1:after {
 
 
 
+
+/* stuff I do */
+ul.projects li {
+    width: 100%;
+}
+
+ul.projects {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
     
