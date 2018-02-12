@@ -217,9 +217,9 @@ header.major h1:after {
 .socialMedia:hover {
     color: #FF5280;
 }
-a:hover {
+/* a:hover {
     color: #FF5280;
-}
+} */
 
 @media (min-width: 981px) {
     #footer footer .copyright {
@@ -409,6 +409,42 @@ a:hover {
     }
     to {
       color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .icon-download:after {
+        /* left: 0.01rem; */
+        left: 0.45rem;
+    }
+    
+    .icon-download:before {
+        /* left: 0.25rem; */
+        left: 0.7rem;
+    }
+
+    .icon-download {
+        border: solid 0.3rem #232323;
+        border-top: 0;
+    }
+    
+    .button-download, .meter {
+        position: relative;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.1rem;
+        line-height: 3rem;
+        padding: 0 2rem;
+    
+    }
+    
+    .icon-wrap {
+        width: 3rem;
+    }
+    
+    .download {
+        width: 12rem;
+        left: 8%;
     }
   }
 
