@@ -1312,10 +1312,11 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("http://ditindia.com/wp-content/uploads/2017/03/front-end-development.jpg"), url("../../images/bg.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
+		
 	}
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
